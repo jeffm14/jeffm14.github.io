@@ -2,11 +2,11 @@
 The PerformanceTestingBot app performs throughput and stress tests on a specified endpoint. Just specify a verified endpoint and a branch and the performanceBotTest will report statistics on every pull request.
 
 ## Recommended usage
-You should run this on one instance of your application to understand your scaling thresholds in production. You can also use the stress test feature to get an understanding of your scaling implementation for your production cluster. 
+You should run this on one instance of your application to understand your scaling thresholds in production. You can also use the stress test feature to get an understanding of your scaling implementation for your production cluster. Use throughput tests to make sure that your apps performance remains consistent.
 
 ### Types of tests
 #### Stress Test:
-Will test the limits of your deployed application, currently will max out at 700 Transactions/Queries per second.
+Will test the limits of your deployed application, (up to 700 Transactions/Queries per second).
 
 #### Threshold test:
 Will hit your endpoint at a specified threshold for a given amount of time (up to 15 minutes). 
