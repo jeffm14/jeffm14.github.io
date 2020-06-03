@@ -48,8 +48,11 @@ Acceptance Criteria
 
 Variable inputs
 
-
 ## Support / Feature requests
+### Community
 Join us on slack! 
 [![slack_logo](https://raw.githubusercontent.com/jeffm14/performanceTestExampleRepo/master/Slack_logo_new_mini.png)](https://join.slack.com/t/performancetestingbot/shared_invite/zt-eufjei5s-DwcFjc9hmtUOyxemYygUXA)
 
+###Contact Paid Support
+* Product support
+* General questions
