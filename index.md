@@ -4,6 +4,13 @@ The PerformanceTestingBot app performs throughput and stress tests on a specifie
 ## Recommended usage
 You should run this on one instance of your application to understand your scaling thresholds in production. You can also use the stress test feature to get an understanding of your scaling implementation for your production cluster. Use throughput tests to make sure that your apps performance remains consistent.
 
+## Installation
+In order to prevent malicious attacks against other sites, you will need to verify ownership of your domain. It's a simple process that involves exposing a temporary GET endpoint. 
+1) Upon installation to a repository, a github issue will be created in the repository with a unique id.
+2) Create a GET endpoint with that responds 200 with that unique id as the response
+3) Add the endpoint to your `.performanceTestingBot` file in the `verification_url` field
+[Example](https://raw.githubusercontent.com/jeffm14/performanceTestExampleRepo/master/.performanceTestingBot) 
+
 ### Types of tests
 #### Stress Test:
 Will test the limits of your deployed application, (up to 700 Transactions/Queries per second).
@@ -25,10 +32,6 @@ You can specify a test to run
 
 #### Example output:
 [PullRequest](https://github.com/jeffm14/performanceTestExampleRepo/pull/56)
-
-## Installation
-1) Tests are configured by a `.performanceTestingBot` file at the root of the repository. 
-2) You will also need to verify that you own the domain / endpoint. To do this you must create an endpoint that accepts a GET request that responds with a verification_id. I will reach out with the verification_id after installation.
 
 ## Configuration
 The Schema for your `.performanceTestingBot` needs to conform the following schema linked below.
