@@ -23,7 +23,7 @@ Will hit your endpoint at a specified threshold for a given amount of time (up t
 #### Run Conditions
 You can specify a test to run \
 1) If a merge and base branch is specified (i.e. develop -> master) \
-2) Every PR if no merged / base branch is specified \
+2) Every PR if no merged / base branch is specified 
 
 #### Run Trigger/Events
 1) On a created pull request the PerformanceTestingBot will run the specified tests and comment the result back in the open pull request \
